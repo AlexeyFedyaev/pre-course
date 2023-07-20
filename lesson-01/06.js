@@ -1,4 +1,4 @@
-let str = "zzyzzzz"; 
 
+let str = "zzzzyzz"
 
-str.includes('y')? console.log('Нашел'):console.log('Заблудился');
+str.includes('y')? console.log('нашел'):console.log('заблудился');
