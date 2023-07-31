@@ -2,8 +2,8 @@ let passport = {
     name: "Petr",
     surname: "Petrov",
 };
- let passport1 = {...passport,
+ let passportWithNameIvan = {...passport,
     name: "Ivan",
 };
 console.log(passport); 
-console.log(passport1); 
+console.log(passportWithNameIvan);    
