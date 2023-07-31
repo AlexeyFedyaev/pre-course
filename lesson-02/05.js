@@ -5,5 +5,5 @@ let passport = {
  let passportWithNameIvan = {...passport,
     name: "Ivan",
 };
-console.log(passport); 
-console.log(passportWithNameIvan);    
+console.log(passport.name); 
+console.log(passportWithNameIvan.name);     
