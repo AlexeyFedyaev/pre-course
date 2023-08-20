@@ -1,16 +1,10 @@
 const colors = ["синий", "черный", "зеленый", "красный", "желтый"];
 
-function createColorString(colors) {
-  let filteredIndexes = [];
+function createColorString() {
+  const germanFlag = colors.filter(color =>color === "черный" || color === "красный" || color === "желтый");
+  return germanFlag.join('-');
+};
 
-  colors.forEach(function (color, index) {
-    if (color === "черный" || color === "красный" || color === "желтый") {
-      filteredIndexes.push(index);
-    }
-  });
 
-  return filteredIndexes.join('-');
-}
-
-console.log(createColorString(colors));
+console.log(createColorString());
 
