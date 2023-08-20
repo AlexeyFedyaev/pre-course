@@ -1,10 +1,9 @@
 const colors = ["синий", "черный", "зеленый", "красный", "желтый"];
 
-let germanFlag = colors.filter(function createColorString(color) {
-  if (color === "черный" || color === "красный" || color === "желтый") {
-    return true;
-  }
-  return false;
-});
+function createColorString(color) {
+  return color === "черный" || color === "красный" || color === "желтый";
+}
 
-console.log(germanFlag);
+const filteredColors = colors.filter(createColorString);
+console.log(filteredColors.join());
+
