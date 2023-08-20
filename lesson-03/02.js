@@ -1,8 +1,8 @@
 ​const words = ["яблоко", "банан", "апельсин", "манго", "киви"];
 let orangeIndex = words.indexOf("апельсин");
-if(orangeIndex < 0) {
+if(orangeIndex === -1) {
   console.log("«Придется поискать в другом магазине...");
 }
-  else {
+  else { 
     console.log("Ура! нашел");
   }
