@@ -1,9 +1,16 @@
 const colors = ["синий", "черный", "зеленый", "красный", "желтый"];
 
-function createColorString(color) {
-  return color === "черный" || color === "красный" || color === "желтый";
+function createColorString(colors) {
+  let filteredIndexes = [];
+
+  colors.forEach(function (color, index) {
+    if (color === "черный" || color === "красный" || color === "желтый") {
+      filteredIndexes.push(index);
+    }
+  });
+
+  return filteredIndexes.join('-');
 }
 
-const filteredColors = colors.filter(createColorString);
-console.log(filteredColors.join());
+console.log(createColorString(colors));
 
