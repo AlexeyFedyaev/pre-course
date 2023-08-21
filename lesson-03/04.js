@@ -8,7 +8,7 @@ const users = [
   {
     id: 2,
     user: "Jane",
-    surName: "Smith",
+    surName: "Smith", 
     address: "456 Elm St",
   },
   {
